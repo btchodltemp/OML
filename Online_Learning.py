@@ -1,8 +1,8 @@
-# learning batching data
+# learning batching data Обучение batch-данных 
 for i in range(len(batch_y)):
-        # extract the predict proba for batch_y
+        # extract the predict proba for batch_y Извлечение предиктивной пробы для функции batch_y
         pre_proba = pred_y[i][int(np.argmax(batch_y[i]))]
-        # set the exit condition
+        # set the exit condition Задаем состояние выхода
         success_flag = False
         no_of_attempts = 0
         # retrain on the single input and output
